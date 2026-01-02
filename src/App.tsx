@@ -1,34 +1,28 @@
 import './App.css'
-import About from './content/About/About'
-import Experience from './content/Experience/Experience'
-import Projects from './content/Projects/Projects'
-import Achievements from './content/Achievements/Achievements'
-import Tech from './content/Tech/Tech'
-import Contacts from './content/Contacts/Contacts'
+import { Route, Routes } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
+import ExperiencePage from './pages/ExperiencePage'
+import ProjectsPage from './pages/ProjectsPage'
+import AchievementsPage from './pages/AchievementsPage'
+import TechPage from './pages/TechPage'
+import ContactsPage from './pages/ContactsPage'
+import Layout from './components/Layout/Layout'
 
 function App() {
   return (
     <>
-    <h1>This is the App page</h1>
-
-      {/* MAIN CONTENT */}
-      <main>
-        {/* Navbar */}
-        
-        {/* About */}
-        <About />
-        {/* Experience */}
-        <Experience />
-        {/* Projects */}
-        <Projects />
-        {/* Achievements */}
-        <Achievements />
-        {/* Tech stack */}
-        <Tech />
-        {/* Contacts */}
-        <Contacts />
-      </main>
-
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/experience" element={<ExperiencePage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/achievements" element={<AchievementsPage />} />
+          <Route path="/tech" element={<TechPage />} />
+          <Route path="/contacts" element={<ContactsPage />} />
+        </Route>
+      </Routes>
     </>
   )
 }
