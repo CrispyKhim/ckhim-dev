@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
 import '../App.css'
+import MyButton from '../components/Button/Button'
 
 function AboutPage() {
   return (
     <>
-      <p>About Page</p>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/projects">Projects</Link>
+      <h1>Christopher Khim</h1>
+      <MyButton text='Hi' />
+      <Link to="/">Back</Link>
     </>
   )
 }

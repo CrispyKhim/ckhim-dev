@@ -24,9 +24,7 @@ function ProjectsPage() {
   return (
     <>
       <p>Projects Page</p>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/projects">Projects</Link>
+      <Link to="/">Back</Link>
 
       <MyButton />
 

@@ -1,17 +1,34 @@
-import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import HomePage from './pages/HomePage'
-import AboutPage from './pages/AboutPage'
-import ProjectsPage from './pages/ProjectsPage'
+import About from './content/About/About'
+import Experience from './content/Experience/Experience'
+import Projects from './content/Projects/Projects'
+import Achievements from './content/Achievements/Achievements'
+import Tech from './content/Tech/Tech'
+import Contacts from './content/Contacts/Contacts'
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/about' element={<AboutPage />} />
-        <Route path='/projects' element={<ProjectsPage />} />
-      </Routes>
+    <h1>This is the App page</h1>
+
+      {/* MAIN CONTENT */}
+      <main>
+        {/* Navbar */}
+        
+        {/* About */}
+        <About />
+        {/* Experience */}
+        <Experience />
+        {/* Projects */}
+        <Projects />
+        {/* Achievements */}
+        <Achievements />
+        {/* Tech stack */}
+        <Tech />
+        {/* Contacts */}
+        <Contacts />
+      </main>
+
     </>
   )
 }
