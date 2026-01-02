@@ -3,20 +3,21 @@ import { Link } from 'react-router-dom'
 import '../App.css'
 
 // Using useState
+// useState is a React hook since it starts with 'use'
 function MyButton() {
-    // Count is the current state
-    // setCount updates the state when clicked
-    const [count, setCount] = useState(0);
+  // Count is the current state
+  // setCount updates the state when clicked
+  const [count, setCount] = useState(0);
 
-    function handleClick() {
-        setCount(count + 1);
-    }
+  function handleClick() {
+    setCount(count + 1);
+  }
 
-    return (
-        <button onClick={handleClick}>
-            Clicked {count} times
-        </button>
-    );
+  return (
+    <button onClick={handleClick}>
+      Clicked {count} times
+    </button>
+  );
 }
 
 function ProjectsPage() {
