@@ -10,9 +10,9 @@ My portfolio website showcasing myself, projects, skills, contact info, etc.
 ## Installation
 To run the portfolio locally, execute these steps:
 
-1. Clone the repository: `git clone https://github.com/CrispyKhim/ckhim-dev.git`
+1. Clone the repository: `git clone https://github.com/CrispyKhim/ckhim.dev.git`
 
-2. Navigate to the project directory: `cd ckhim-dev`
+2. Navigate to the project directory: `cd ckhim.dev`
 
 3. Install dependencies with `npm install`
 
