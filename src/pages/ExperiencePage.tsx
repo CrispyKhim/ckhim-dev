@@ -1,9 +1,9 @@
-import Experience from '../content/Experience/Experience'
+
 
 export default function ExperiencePage() {
   return (
     <>
-        <Experience />
+        <h1>Experience Page</h1>
     </>
   )
 }

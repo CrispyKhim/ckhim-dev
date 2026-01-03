@@ -1,9 +1,9 @@
-import Projects from '../content/Projects/Projects'
+
 
 export default function ProjectsPage() {
   return (
     <>
-        <Projects />
+        <h1>Projects Page</h1>
     </>
   )
 }
