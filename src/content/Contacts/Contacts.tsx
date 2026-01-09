@@ -1,7 +1,7 @@
 export default function Contacts() {
     return (
         <>
-            <p>Short Contacts component section</p>
+            <h1>Stay in touch!</h1>
         </>
     )
 }
