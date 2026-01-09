@@ -1,18 +1,25 @@
+import Home from '../content/Home/Home'
 import About from '../content/About/About'
-import Experience from '../content/Experience/Experience'
 import Projects from '../content/Projects/Projects'
-import Tech from '../content/Tech/Tech'
 import Contacts from '../content/Contacts/Contacts'
 
 export default function HomePage() {
   return (
-    <>
-      <h1>Home Page</h1>
+    <div className='max-w-screen mx-auto'>
+      <Home />
       <About />
-      <Experience />
       <Projects />
-      <Tech />
       <Contacts />
-    </>
+
+      {/* CV */}
+      <iframe
+        src='public/Ckhim - CV.pdf'
+        title='CV'
+        width='100%'
+        height='100%'
+        className='mx-auto'
+      />
+
+    </div>
   )
 }
