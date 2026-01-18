@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Intro() {
     return (
         <div className="h-screen w-screen text-center bg-blue-900 flex flex-col justify-center">
             <h1>Christopher Khim</h1>
