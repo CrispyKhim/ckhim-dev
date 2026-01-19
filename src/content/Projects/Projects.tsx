@@ -14,7 +14,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <div className="h-screen w-screen max-w-6xl mx-50">
+        <div className="h-screen w-full max-w-6xl mx-auto px-4">
             <h1>Projects</h1>
             <div className="grid grid-cols-1 md:grid-cols gap-6">
                 {projects.map((item) => (
