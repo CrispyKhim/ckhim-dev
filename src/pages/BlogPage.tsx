@@ -1,8 +1,9 @@
 export default function BlogPage() {
     return (
         <>
-            <div className="h-screen w-full text-center flex flex-col justify-center">
-                <p>Blog page incoming!</p>
+            {/* Remove padding when you start this page */}
+            <div className="h-screen w-full text-center flex flex-col justify-center pt-200 pb-100">
+                <h1>Blog page incoming!</h1>
             </div>
         </>
     )
