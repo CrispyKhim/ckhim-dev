@@ -18,7 +18,7 @@ export default function Navbar() {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			setIsScrolled(window.scrollY > 50)
+			setIsScrolled(window.scrollY > 100)
 		}
 
 		// Check initial scroll position
