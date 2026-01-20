@@ -7,7 +7,7 @@ import EmailIcon from '@mui/icons-material/Email'
 import ArticleIcon from '@mui/icons-material/Article';
 
 const navItems = [
-	{ path: '/about', label: 'About' },
+	{ path: '/', label: 'About' },
 	{ path: '/projects', label: 'Projects' },
 	{ path: '/blog', label: 'Blog' },
 	{ path: '/contacts', label: 'Contacts' },
