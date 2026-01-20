@@ -66,7 +66,7 @@ export default function Navbar() {
 			{/* Social Media Icons & More */}
 			<div className='flex items-center justify-between px-20 py-2 top-0'>
 				{/* Bio */}
-				<p className=''>Programmer + 3D Modeller + Gamer</p>
+				<p>Programmer + 3D Modeller + Designer</p>
 				{/* Icons */}
 				<div className='flex items-center gap-4'>
 					<a href='public/Ckhim - CV.pdf' target='_blank' rel='noopener noreferrer' aria-label='CV'>
