@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
@@ -13,14 +14,41 @@ const navItems = [
 ]
 
 export default function Navbar() {
+	const [isScrolled, setIsScrolled] = useState(false)
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsScrolled(window.scrollY > 200)
+		}
+
+		// Check initial scroll position
+		handleScroll()
+
+		window.addEventListener('scroll', handleScroll, { passive: true })
+		return () => window.removeEventListener('scroll', handleScroll)
+	}, [])
+
+
 	return (
 		<>
 		{/* Name + NavLinks */}
 		{/* Justify-between keeps the elements on the side of the navbars */}
-		<nav className='fixed top-0 left-0 right-0 z-50 w-full bg-white'>
+		<nav 
+			className={`bg-white text-black transition-all duration-700 ease-in-out fixed z-50 ${
+				isScrolled 
+					? 'top-0 left-0 right-0 shadow-md w-full' 
+					: 'top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-7xl'
+			}`}
+		>
 			<div className='flex items-center justify-between px-20 py-3 top-0'>
 				{/* Name */}
-				<h1 className='text-xl font-bold'>Christopher Khim</h1>
+				<NavLink
+					to="/"
+					className="text-4xl font-bold cursor-pointer !text-black hover:!text-gray-600 transition-colors"
+				>
+					Christopher Khim
+				</NavLink>
+
 				{/* NavLinks */}
 				<ul className='flex items-center gap-6'>
 					{navItems.map((item) => (
@@ -29,7 +57,6 @@ export default function Navbar() {
 						</li>
 					))}
 				</ul>
-
 			</div>
 
 			{/* Horizontal Line */}
