@@ -3,7 +3,9 @@
 export default function ProjectsPage() {
   return (
     <>
-        <h1>Projects Page</h1>
+      <div className="h-screen w-full text-center flex flex-col justify-center">
+        <p>Projects page incoming!</p>
+      </div>
     </>
   )
 }
