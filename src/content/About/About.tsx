@@ -1,21 +1,23 @@
+const about = [
+    'Penultimate computer science @ UNSW',
+    'Self-taught Python',
+    'Actively learning web development with React + Tailwind CSS + more',
+    'Extensive volunteering experience in high school + university'
+]
+
 export default function About() {
     return (
-        <div className="w-full h-screen bg-green-800 p-10">
+        <div className="w-full h-screen p-20">
             <h1>About</h1>
+
+            
             <hr />
             
             <ul>
-                <li></li>
+                {about.map((item) => (
+                    <li>{item}</li>
+                ))}
             </ul>
-
-            {/* CV */}
-            {/* <iframe
-                src='public/Ckhim - CV.pdf'
-                title='CV'
-                width='100%'
-                height='100%'
-                className='mx-auto'
-            /> */}
         </div>
     )
 }

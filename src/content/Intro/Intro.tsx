@@ -1,8 +1,7 @@
 export default function Intro() {
     return (
-        <div className="h-screen w-full text-center bg-blue-900 flex flex-col justify-center">
-            <h1>Christopher Khim</h1>
-            <h2>Programmer</h2>
+        <div className="h-100 w-full text-center flex flex-col justify-center">
+            {/* Something here... */}
         </div>
     )
 }

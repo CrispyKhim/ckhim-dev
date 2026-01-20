@@ -7,7 +7,7 @@ export default function Layout() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 200)
+      setIsScrolled(window.scrollY > 50)
     }
 
     // Check initial scroll position
