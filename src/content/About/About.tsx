@@ -9,7 +9,7 @@ export default function About() {
                 <p>I'm Christopher, currently living in Sydney as a penultimate computer science @ UNSW.</p>
                 <p>Despite the lack of employability and experience, I am somewhat building projects to develop technical skills and keep up-to-date with the latest tech trends!</p>
                 <br />
-                <p>Besides creating personal projects for self-growth, I like to design and model <NavLink to={'/projects'}>3D projects</NavLink> on Blender.</p>
+                <p>Besides creating personal projects for self-growth, I like to design and model <NavLink to={'/projects'} id='highlight'>3D projects</NavLink> on Blender.</p>
                 <br />
                 <p></p>
             </div>

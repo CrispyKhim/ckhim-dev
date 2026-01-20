@@ -5,7 +5,7 @@ interface Project {
     title: string;
     description: string;
     tech: string[];
-    github: string;
+    github?: string;
     app?: string;
 }
 
@@ -60,13 +60,13 @@ export default function Projects() {
 
                         {/* Github & App Link */}
                         <div className='flex flex-row items-center justify-start'>
-                            <a className="my-2 mr-4 p-2 bg-white border border-black rounded-lg" href={project.github} target='_blank' rel='noopener noreferrer' aria-label='GitHub'>
+                            { project.github && 
+                            <a className="my-2 mr-4 p-2 bg-white border border-black rounded-lg" href={project.github} target='_blank' rel='noopener noreferrer' aria-label='GitHub' id='highlight'>
                                 <GitHubIcon className='text-black hover:text-gray-600 transition-colors' /> Github Link
-                            </a>
+                            </a> }
 
-                            {/* Render the app link icon only if it exists */}
                             { project.app && 
-                            <a className="my-2 mr-4 p-2 bg-white border border-black rounded-lg" href={project.app} target='_blank' rel='noopener noreferrer' aria-label='GitHub'>
+                            <a className="my-2 mr-4 p-2 bg-white border border-black rounded-lg" href={project.app} target='_blank' rel='noopener noreferrer' aria-label='App' id='highlight'>
                                 <LinkIcon className='text-black hover:text-gray-600 transition-colors' /> App Link
                             </a> }
                         </div>
