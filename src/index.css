@@ -19,12 +19,12 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
+#navbar {
   font-weight: 500;
   color: #2563eb;
   text-decoration: inherit;
 }
-a:hover {
+#navbar:hover {
   color: #1d4ed8;
 }
 

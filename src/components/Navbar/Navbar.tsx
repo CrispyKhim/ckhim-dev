@@ -44,7 +44,7 @@ export default function Navbar() {
 				{/* Name */}
 				<NavLink
 					to="/"
-					className="text-4xl font-bold cursor-pointer !text-black hover:!text-gray-600 transition-colors"
+					className="text-4xl font-bold cursor-pointer hover:text-gray-600 transition-colors"
 				>
 					Christopher Khim
 				</NavLink>
@@ -53,7 +53,7 @@ export default function Navbar() {
 				<ul className='flex items-center gap-6'>
 					{navItems.map((item) => (
 						<li key={item.path}>
-							<NavLink to={item.path}>{item.label}</NavLink>
+							<NavLink to={item.path} id='navbar'>{item.label}</NavLink>
 						</li>
 					))}
 				</ul>
