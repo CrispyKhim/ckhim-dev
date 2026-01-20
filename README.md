@@ -1,6 +1,7 @@
 # Portfolio
 
 My portfolio website showcasing myself, projects, skills, contact info, etc.
+This project is a work in progress. Visual elements will be added later.
 
 ## Table of Contents
 
